@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10075" started-at="2019-10-02T17:16:14Z" finished-at="2019-10-02T17:16:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10075" started-at="2019-10-02T17:16:14Z" finished-at="2019-10-02T17:16:24Z">
+      <class name="com.test.EdurekaSelenium.FirstTestNG">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@51565ec2]" name="setup" is-config="true" duration-ms="5094" started-at="2019-10-02T11:16:14Z" finished-at="2019-10-02T11:16:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test_recalcularcorte()[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@51565ec2]" name="test_recalcularcorte" duration-ms="4961" started-at="2019-10-02T11:16:19Z" finished-at="2019-10-02T11:16:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_recalcularcorte -->
+      </class> <!-- com.test.EdurekaSelenium.FirstTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
