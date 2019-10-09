@@ -90,7 +90,9 @@ public class FirstTestNG {
 		objRealizarCorte.clickRealizarCorte();
 		
 		//Control the google Chrome notification
-		objDesktopAppController = new DesktopAppController();
+		//objDesktopAppController = new DesktopAppController();
+		
+		driver.switchTo().alert().dismiss();
 		
 		//objDesktopAppController.clickAceptar();
 		
