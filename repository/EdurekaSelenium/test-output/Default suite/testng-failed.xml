@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.test.EdurekaSelenium.LoginPage"/>
-      <class name="com.test.EdurekaSelenium.App"/>
-      <class name="com.test.EdurekaSelenium.MenuPrincipal"/>
-      <class name="com.test.EdurekaSelenium.RealizarCorte"/>
-      <class name="com.test.EdurekaSelenium.DesktopAppController"/>
-      <class name="frameworkPackage.BrowserFactory"/>
       <class name="com.test.EdurekaSelenium.FirstTestNG"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.test.EdurekaSelenium.FirstTestNG">
+        <methods>
+          <include name="test_recalcularcorte"/>
+        </methods>
+      </class> <!-- com.test.EdurekaSelenium.FirstTestNG -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,4 +8,16 @@
       <class name="com.test.EdurekaSelenium.FirstTestNG"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="url" value="http://wls33.tgc.mx:8080/re_login/faces/infraestructura"/>
+    <classes>
+      <class name="com.test.EdurekaSelenium.FirstTestNG">
+        <methods>
+          <include name="test_recalcularcorte"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.test.EdurekaSelenium.FirstTestNG -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
