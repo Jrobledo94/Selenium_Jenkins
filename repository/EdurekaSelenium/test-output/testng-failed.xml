@@ -8,7 +8,6 @@
       <class name="com.test.EdurekaSelenium.FirstTestNG"/>
     </classes>
   </test> <!-- Test -->
-<<<<<<< Updated upstream
   <test name="Test(failed)">
     <parameter name="url" value="http://wls33.tgc.mx:8080/re_login/faces/infraestructura"/>
     <classes>
@@ -21,6 +20,4 @@
       </class> <!-- com.test.EdurekaSelenium.FirstTestNG -->
     </classes>
   </test> <!-- Test(failed) -->
-=======
->>>>>>> Stashed changes
 </suite> <!-- Failed suite [Suite] -->

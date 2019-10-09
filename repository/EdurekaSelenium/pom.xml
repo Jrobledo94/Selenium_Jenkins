@@ -39,14 +39,6 @@
     <version>0.1.0-1</version>
 </dependency>
 
-<<<<<<< Updated upstream
-=======
-    <dependency>
-	    <groupId>io.github.bonigarcia</groupId>
-	    <artifactId>webdrivermanager</artifactId>
-	    <version>3.7.1</version>
-	</dependency>
->>>>>>> Stashed changes
     
   </dependencies>
 </project>
