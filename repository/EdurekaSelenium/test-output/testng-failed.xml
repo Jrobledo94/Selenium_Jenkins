@@ -11,5 +11,4 @@
       <class name="frameworkPackage.BrowserFactory"/>
       <class name="com.test.EdurekaSelenium.FirstTestNG"/>
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+
