@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="url" value="http://wls33.tgc.mx:8080/re_login/faces/infraestructura"/>
+<suite name="Suite">
   <test thread-count="5" name="Test">
+
     <parameter name="url" value="http://wls33.tgc.mx:8080/re_login/faces/infraestructura"/>
+
     <classes>
       <class name="com.test.EdurekaSelenium.FirstTestNG"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Failed suite [Suite] -->
+</suite> <!-- Suite -->
