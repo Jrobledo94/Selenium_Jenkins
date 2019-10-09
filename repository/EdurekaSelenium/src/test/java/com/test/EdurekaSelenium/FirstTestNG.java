@@ -11,7 +11,6 @@ import org.openqa.selenium.winium.WiniumDriver;
 import org.openqa.selenium.winium.WiniumDriverService;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class FirstTestNG {
@@ -36,30 +35,14 @@ public class FirstTestNG {
 	
 	
 	@BeforeTest
-	@Parameters({"url"})
-	public void setup(String url) {
+	public void setup() {
 		
 		//Set up for the selenium Driver
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		driver.get(url);		
+		driver.get("http://wls33.tgc.mx:8080/re_login/faces/infraestructura/login.jspx?_adf.ctrl-state=s7xuq5fq7_3");		
 		
-<<<<<<< Updated upstream
-		//Set up for the Winium Driver
-		options = new DesktopOptions();
-		options.setDebugConnectToRunningApp(true);
-		options.setApplicationPath("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-		File driverPath = new File("C:\\Users\\instalacion\\Documents\\TEC\\Winium.Desktop.Driver.exe");
-		service = new WiniumDriverService.Builder().usingDriverExecutable(driverPath).usingPort(9999)
-				.withVerbose(true).withSilent(false).buildDesktopService();
-		try {
-			service.start();
-		} catch (IOException e) {
-			System.out.println("Exception while starting WINIUM service");
-			e.printStackTrace();
-		}
-		driverWinium = new WiniumDriver(service,options);
-=======
+
 //		//Set up for the Winium Driver
 //		options = new DesktopOptions();
 //		options.setDebugConnectToRunningApp(true);
@@ -74,7 +57,7 @@ public class FirstTestNG {
 //			e.printStackTrace();
 //		}
 //		driverWinium = new WiniumDriver(service,options);
->>>>>>> Stashed changes
+
 		
 	}
 	
@@ -105,10 +88,6 @@ public class FirstTestNG {
 		
 		objRealizarCorte.clickRealizarCorte();
 		
-		//Control the google Chrome notification
-		objDesktopAppController = new DesktopAppController();
-		
-		//objDesktopAppController.clickAceptar();
 		
 		driver.switchTo().alert().accept();
 		
