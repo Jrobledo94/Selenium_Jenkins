@@ -2,12 +2,21 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< Updated upstream
   <suite name="Suite" duration-ms="8807" started-at="2019-10-09T18:09:22Z" finished-at="2019-10-09T18:09:31Z">
     <groups>
     </groups>
     <test name="Test" duration-ms="8807" started-at="2019-10-09T18:09:22Z" finished-at="2019-10-09T18:09:31Z">
       <class name="com.test.EdurekaSelenium.FirstTestNG">
         <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@4678c730]" name="setup" is-config="true" duration-ms="3824" started-at="2019-10-09T12:09:22Z" finished-at="2019-10-09T12:09:26Z">
+=======
+  <suite name="Suite" duration-ms="8725" started-at="2019-10-09T20:40:40Z" finished-at="2019-10-09T20:40:49Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8725" started-at="2019-10-09T20:40:40Z" finished-at="2019-10-09T20:40:49Z">
+      <class name="com.test.EdurekaSelenium.FirstTestNG">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="setup" is-config="true" duration-ms="3985" started-at="2019-10-09T14:40:40Z" finished-at="2019-10-09T14:40:44Z">
+>>>>>>> Stashed changes
           <params>
             <param index="0">
               <value>
@@ -18,6 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+<<<<<<< Updated upstream
         <test-method status="FAIL" signature="test_recalcularcorte()[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@4678c730]" name="test_recalcularcorte" duration-ms="4961" started-at="2019-10-09T12:09:26Z" finished-at="2019-10-09T12:09:31Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -122,6 +132,13 @@ Session ID: b06c513b231fad8c5a8930f559a013a0
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
+=======
+        <test-method status="PASS" signature="test_recalcularcorte()[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="test_recalcularcorte" duration-ms="4722" started-at="2019-10-09T14:40:44Z" finished-at="2019-10-09T14:40:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_recalcularcorte -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-10-09T14:40:49Z" finished-at="2019-10-09T14:40:49Z">
+>>>>>>> Stashed changes
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -9,6 +9,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+<<<<<<< Updated upstream
+=======
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+
+>>>>>>> Stashed changes
 /**
  * Hello world!
  *
@@ -19,6 +25,7 @@ public class App
     {
         System.out.println( "Hello World!" );
         
+<<<<<<< Updated upstream
    	 	System.setProperty("webdriverchrome.driver","C:\\Users\\instalacion\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe");
    	 	WebDriver driver = new ChromeDriver();
         driver.get("http://wls33.tgc.mx:8080/re_login/faces/infraestructura/login.jspx?_adf.ctrl-state=s7xuq5fq7_3");
@@ -72,20 +79,57 @@ public class App
         //------------------------------------------------
 //        WebElement SearchBox = driver.findElement(By.id("twotabsearchtextbox"));
 //        SearchBox.sendKeys("iPhone");
+=======
+//        WebDriverManager.chromedriver().setup();
+//        WebDriver driver = new ChromeDriver();
+//        driver.get("http://wls33.tgc.mx:8080/re_login/faces/infraestructura/login.jspx?_adf.ctrl-state=s7xuq5fq7_3");
+>>>>>>> Stashed changes
 //        
-//        WebElement SearchIcon = driver.findElement(By.className("nav-input"));
-//        SearchIcon.click();
 //        
-//        WebElement checkBox = driver.findElement(By.linkText("Nuevo"));
-//        checkBox.click();
+//        WebElement usuTxt = driver.findElement(By.name("txtUsuario"));
+//        usuTxt.sendKeys("RECAUDADOR");
+//
+//        WebElement passTxt = driver.findElement(By.name("txtPass"));
+//        passTxt.sendKeys("THEBIGONE");
+//        
+//        WebElement loginButton = driver.findElement(By.id("cb1"));
+//        loginButton.click();
 //        
 //        
-//        JavascriptExecutor js = (JavascriptExecutor)driver;
-//        js.executeScript("window.scrollBy(0,4000)");
-        //------------------------------------------------
-        
-        
-        System.out.println( "Fin" );
+//        // para estas acciones se necesita crear una clase aparte para usar Page Object porque es una pagina diferente
+//        WebElement realizarCorteButton = driver.findElement(By.id("cl2"));
+//        realizarCorteButton.click();
+//        
+//        
+//        // para estas acciones se necesita crear una clase aparte para usar Page Object porque es una pagina diferente
+//        Select selectOneInstrumentoPago = new Select(driver.findElement(By.id("j_id_id5:cxI")));
+//        selectOneInstrumentoPago.selectByVisibleText("MONEDA NACIONAL"); //a recorrer las opciones
+//        Thread.sleep(2000);
+//        WebElement billetes200TxtBox = 	driver.findElement(By.xpath("//td[text()='200.0']//following::td//child::input"));
+//        billetes200TxtBox.click();
+//        billetes200TxtBox.clear();
+//        billetes200TxtBox.sendKeys("3");
+//        
+//        System.out.println( "moneda" );
+//        WebElement moneda10TxtBox = 	driver.findElement(By.xpath("//td[text()=\"10.0\"]//following-sibling::td//child::input"));
+//        moneda10TxtBox.click();
+//        moneda10TxtBox.clear();
+//        moneda10TxtBox.sendKeys("3");
+//        
+//        
+//        WebElement recalcularButton = driver.findElement(By.xpath("//button[text()='Recalcular']"));
+//        recalcularButton.click();
+//        
+//                
+//        WebElement corteButton = driver.findElement(By.xpath("//button[text()='Realizar corte']"));
+//        corteButton.click();
+//        System.out.println(driver.switchTo().alert().getText());
+//
+//        
+//        driver.switchTo().alert().accept();
+//
+//        
+//        System.out.println( "Fin" );
         
         //driver.quit();
     }
