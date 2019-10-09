@@ -3,10 +3,13 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
 
-    <parameter name="url" value="http://wls33.tgc.mx:8080/re_login/faces/infraestructura"/>
+    <parameter name="url" value="http://wls33.tgc.mx:8080/re_login/faces/infraestructura"></parameter>
+    
+    <parameter name="usuario" value="RECAUDADOR"></parameter>
+    
+    <parameter name="password" value="THEBIGONE"></parameter>
 
     <classes>
       <class name="com.test.EdurekaSelenium.FirstTestNG"/>
-    </classes>
-  </test> <!-- Test -->
+    </classes></test> <!-- Test -->
 </suite> <!-- Suite -->

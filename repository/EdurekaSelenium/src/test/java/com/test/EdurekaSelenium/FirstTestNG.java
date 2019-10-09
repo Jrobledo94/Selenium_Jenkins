@@ -20,9 +20,9 @@ public class FirstTestNG {
 		WebDriver driver;
 	
 	//variables for Winium Driver
-		WiniumDriverService service;
-		WiniumDriver driverWinium;
-		DesktopOptions options;
+//		WiniumDriverService service;
+//		WiniumDriver driverWinium;
+//		DesktopOptions options;
 	
 	LoginPage objLoginPage;
 	
@@ -45,30 +45,31 @@ public class FirstTestNG {
 		driver.get(url);		
 		
 		//Set up for the Winium Driver
-		options = new DesktopOptions();
-		options.setDebugConnectToRunningApp(true);
-		options.setApplicationPath("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-		File driverPath = new File("C:\\Users\\instalacion\\Documents\\TEC\\Winium.Desktop.Driver.exe");
-		service = new WiniumDriverService.Builder().usingDriverExecutable(driverPath).usingPort(9999)
-				.withVerbose(true).withSilent(false).buildDesktopService();
-		try {
-			service.start();
-		} catch (IOException e) {
-			System.out.println("Exception while starting WINIUM service");
-			e.printStackTrace();
-		}
-		driverWinium = new WiniumDriver(service,options);
+//		options = new DesktopOptions();
+//		options.setDebugConnectToRunningApp(true);
+//		options.setApplicationPath("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
+//		File driverPath = new File("C:\\Users\\instalacion\\Documents\\TEC\\Winium.Desktop.Driver.exe");
+//		service = new WiniumDriverService.Builder().usingDriverExecutable(driverPath).usingPort(9999)
+//				.withVerbose(true).withSilent(false).buildDesktopService();
+//		try {
+//			service.start();
+//		} catch (IOException e) {
+//			System.out.println("Exception while starting WINIUM service");
+//			e.printStackTrace();
+//		}
+//		driverWinium = new WiniumDriver(service,options);
 		
 	}
 	
 	
 	@Test
-	public void test_recalcularcorte() {
+	@Parameters({"usuario","password"})
+	public void test_recalcularcorte(String usu, String pass) {
 		
 		//Create new logIn page object
 		objLoginPage = new LoginPage(driver);
 		
-		objLoginPage.loginRecaudador("RECAUDADOR", "THEBIGONE");
+		objLoginPage.loginRecaudador(usu, pass);
 		
 		//Create new menuPrincipal page object
 		objMenuPrincipal = new MenuPrincipal(driver);
@@ -97,7 +98,7 @@ public class FirstTestNG {
 	
 	@AfterTest
 	public void tearDown(){
-		objDesktopAppController.StopService(service);
+//		objDesktopAppController.StopService(service);
 	}
 
 }
