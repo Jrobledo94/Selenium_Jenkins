@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+
 public class FirstTestNG {
 	
 	
@@ -40,6 +42,7 @@ public class FirstTestNG {
 	public void setup(String url) {
 		
 		//Set up for the selenium Driver
+		ChromeDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 		driver.get(url);		
@@ -91,9 +94,21 @@ public class FirstTestNG {
 		
 		//Control the google Chrome notification
 		//objDesktopAppController = new DesktopAppController();
-		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		driver.switchTo().alert().dismiss();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
+		System.out.println("The test has been completed successfuly");
 		//objDesktopAppController.clickAceptar();
 		
 	}
