@@ -108,7 +108,7 @@ public class FirstTestNG {
 			e.printStackTrace();
 		}
 		
-		System.out.println("La prueba se ha completado satisfactoriamente");
+		System.out.println("La prueba se ha completado satisfactoriamente editado para prueba xdxd");
 		//objDesktopAppController.clickAceptar();
 		
 	}
