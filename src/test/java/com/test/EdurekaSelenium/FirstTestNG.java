@@ -116,6 +116,7 @@ public class FirstTestNG {
 	@AfterTest
 	public void tearDown(){
 //		objDesktopAppController.StopService(service);
+		driver.quit();
 	}
 
 }

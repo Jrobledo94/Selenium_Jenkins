@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18675" started-at="2019-10-11T15:57:31Z" finished-at="2019-10-11T15:57:50Z">
+  <suite name="Suite" duration-ms="23562" started-at="2019-10-11T16:10:16Z" finished-at="2019-10-11T16:10:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18675" started-at="2019-10-11T15:57:31Z" finished-at="2019-10-11T15:57:50Z">
+    <test name="Test" duration-ms="23562" started-at="2019-10-11T16:10:16Z" finished-at="2019-10-11T16:10:40Z">
       <class name="com.test.EdurekaSelenium.FirstTestNG">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="setup" is-config="true" duration-ms="10802" started-at="2019-10-11T09:57:31Z" finished-at="2019-10-11T09:57:42Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="setup" is-config="true" duration-ms="9841" started-at="2019-10-11T10:10:16Z" finished-at="2019-10-11T10:10:26Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="test_recalcularcorte(java.lang.String, java.lang.String)[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="test_recalcularcorte" duration-ms="7837" started-at="2019-10-11T09:57:42Z" finished-at="2019-10-11T09:57:50Z">
+        <test-method status="PASS" signature="test_recalcularcorte(java.lang.String, java.lang.String)[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="test_recalcularcorte" duration-ms="12726" started-at="2019-10-11T10:10:26Z" finished-at="2019-10-11T10:10:39Z">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_recalcularcorte -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-10-11T09:57:50Z" finished-at="2019-10-11T09:57:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.EdurekaSelenium.FirstTestNG@59fa1d9b]" name="tearDown" is-config="true" duration-ms="947" started-at="2019-10-11T10:10:39Z" finished-at="2019-10-11T10:10:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
